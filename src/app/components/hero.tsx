@@ -13,7 +13,7 @@ const stack = [
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 16 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.55, ease: "easeOut", delay },
+  transition: { duration: 0.55, ease: "easeOut" as const as const, delay },
 });
 
 export default function Hero() {
@@ -105,7 +105,7 @@ export default function Hero() {
           style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(42px, 7.2vw, 104px)", top: "16vh" }}
           initial={{ opacity: 0, x: -24 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+          transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.1 }}
         >
           TADIWANASHE
         </motion.h1>
@@ -115,7 +115,7 @@ export default function Hero() {
           className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none select-none"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" as const, delay: 0.2 }}
         >
           <div className="flex flex-col items-center" style={{ gap: "2px" }}>
             {stack.map(({ label, color, opacity }) => (
@@ -145,7 +145,7 @@ export default function Hero() {
           style={{ bottom: "22vh" }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, ease: "easeOut", delay: 0.4 }}
+          transition={{ duration: 0.55, ease: "easeOut" as const, delay: 0.4 }}
         >
           <p
             className="text-[#1A1A2E] leading-snug"
@@ -169,7 +169,7 @@ export default function Hero() {
           style={{ fontFamily: "var(--font-anton)", fontSize: "clamp(42px, 7.2vw, 104px)", bottom: "20vh" }}
           initial={{ opacity: 0, x: 24 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.3 }}
         >
           GUCHU
         </motion.h1>
@@ -179,7 +179,7 @@ export default function Hero() {
           className="absolute bottom-7 right-8 z-20 flex items-center gap-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
+          transition={{ duration: 0.5, ease: "easeOut" as const, delay: 0.6 }}
         >
           <a href="https://www.linkedin.com/in/tadiwanashe-guchu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-[#1A1A2E] hover:text-[#F05A28] transition-colors duration-200">
             <LinkedInIcon />
