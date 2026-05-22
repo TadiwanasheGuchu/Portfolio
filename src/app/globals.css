@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-blush: #fae9e0;
+  --color-orange: #f05a28;
+  --color-navy: #1a1a2e;
+  --font-sans: var(--font-geist-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fae9e0;
+  color: #1a1a2e;
+}
