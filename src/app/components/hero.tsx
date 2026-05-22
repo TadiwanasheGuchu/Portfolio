@@ -13,7 +13,7 @@ const stack = [
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 16 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.55, ease: "easeOut" as const as const, delay },
+  transition: { duration: 0.55, ease: "easeOut" as const, delay },
 });
 
 export default function Hero() {
